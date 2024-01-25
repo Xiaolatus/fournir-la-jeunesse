@@ -10,10 +10,12 @@ body{
 h2 {
     font-weight: lighter;
     font-size: 30px;
+    font-family: 'Pathway Gothic One', sans-serif;
 }
 
 h1 {
     font-weight: lighter;
+    font-family: 'Pathway Gothic One', sans-serif;
 }
 
 header{
@@ -122,6 +124,14 @@ header img{
     object-position: 100% 0;
 }
 
+#navi button:hover {
+    background-color: #F89500;
+}
+
+.don button:hover {
+    background-color: #F89500;
+}
+
 #banniere #texte {
     position: absolute;
     top: 550px;
@@ -168,6 +178,7 @@ header img{
 
 .action .texte p {
     margin-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
 }
 
@@ -191,6 +202,7 @@ header img{
 
 .texte2 p {
     margin-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
 }
 
@@ -255,6 +267,7 @@ header img{
 }
 
 .actu .texte p {
+    font-family:Arial, Helvetica, sans-serif;
     margin: 10px 20px 20px 20px;
 }
 
@@ -270,6 +283,7 @@ header img{
     font-size: 20px;
     width: 400px;
     text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .don button {
@@ -344,6 +358,7 @@ footer button {
     bottom: -50px;
     margin-left: -60px;
     margin-bottom: 20px;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .f1 {
@@ -355,6 +370,10 @@ footer button {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.f3 p {
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 footer img{

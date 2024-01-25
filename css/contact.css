@@ -108,6 +108,14 @@ button {
     margin-top: 20px;
 }
 
+#navi button:hover {
+    background-color: #F89500;
+}
+
+.don button:hover {
+    background-color: #F89500;
+}
+
 /* fin du header */
 
 #content{

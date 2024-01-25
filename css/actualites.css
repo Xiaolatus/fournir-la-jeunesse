@@ -110,6 +110,14 @@ header img{
     margin-top: 20px;
 }
 
+#navi button:hover {
+    background-color: #F89500;
+}
+
+.don button:hover {
+    background-color: #F89500;
+}
+
 /* fin du hearder */
 
 #banniere {
