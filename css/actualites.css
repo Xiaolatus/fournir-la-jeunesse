@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+body{
+    width: 100%;
+    margin:0;
+    background-color: #FFF5DE;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+h2 {
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    margin:0;
+    background-color: white;
+}
+
+#navi ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    list-style: none;
+    width:70%;
+    margin-right: 2%;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+#navi li{
+    margin-left: 5%;
+}
+
+#navi a{
+    text-decoration: none;
+    color: #000000;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#navi{
+    top: 0;
+    display: flex;
+    justify-content:center; 
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    transition: 0.4s;
+    position: fixed;
+    z-index: 99;
+}
+
+#navi input {  /* Pour la barre de recherche */
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    padding: 5px;
+    width: 400px;
+    margin-top: 20px;
+}
+
+
+header img{
+    height: 100px;
+    transition: 0.4s;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+}
+
+#navi li a:hover{
+    color: #fff;
+    padding:5px;
+    background-color: #AD2C2C;
+    border: solid 1px #AD2C2C;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+#navi button {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    background-color: #FFBD59; 
+    color: #000; 
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px; 
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+/* fin du hearder */
+
+#banniere {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-top: 150px;
+}
+
+#banniere img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+#banniere #texte {
+    position: absolute;
+    top: 428px;
+    left: 250px;
+    transform: translate(-50%, -50%);
+    color: #fff; 
+    font-size: 24px; 
+    background-color: rgba(0, 0, 0, 0.8); /* Ajoute un fond noir avec 50% d'opacité */
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#image {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 220px;
+    text-align: end;
+    align-items: end;
+}
+
+#image img {
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+
+#image #texte1  {
+    position: absolute;
+    top: 1130px;
+    left: 745px;
+    transform: translate(-50%, -50%);
+    color: #fff; 
+    font-size: 12px; 
+    background-color: rgba(0, 0, 0, 0.8); /* Ajoute un fond noir avec 50% d'opacité */
+    padding: 20px;
+}
+
+#image #texte1 p {
+    text-align: center;
+    color: #fff; 
+    width: 100px;
+    font-size: 15px; 
+    background-color: #AD2C2C;
+    padding: 10px;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+#image #texte2  {
+    text-align: start;
+    position: absolute;
+    top: 1149px;
+    right: -30px;
+    transform: translate(-50%, -50%);
+    color: #fff; 
+    font-size: 12px; 
+    background-color: rgba(0, 0, 0, 0.8); /* Ajoute un fond noir avec 50% d'opacité */
+    padding: 20px;
+}
+
+#image #texte2 p {
+    text-align: center;
+    color: #fff; 
+    width: 100px;
+    font-size: 15px; 
+    background-color: #AD2C2C;
+    padding: 10px;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.autres {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-right: 20px;
+}
+
+.autres img {
+    margin-left: 42px;
+    margin-right: 42px;
+}
+
+.autres #st1 p {
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: center;
+    color: #fff; 
+    width: 150px;
+    font-size: 15px; 
+    background-color: #AD2C2C;
+    padding: 10px;
+    position: absolute;
+    top: 1400px;
+    left: 75px;
+}
+
+.autres #st2 p {
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: center;
+    color: #fff; 
+    width: 150px;
+    font-size: 15px; 
+    background-color: #AD2C2C;
+    padding: 10px;
+    position: absolute;
+    top: 1400px;
+    left: 540px;
+}
+
+.autres #st3 p {
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: center;
+    color: #fff; 
+    width: 150px;
+    font-size: 15px; 
+    background-color: #AD2C2C;
+    padding: 10px;
+    position: absolute;
+    top: 1400px;
+    right: 305px;
+}
+
+#top {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.gauche {
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-right: 20px;
+
+}
+
+.gauche h1 {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    color: #fff;
+    font-size: 60px;
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #004AAD;
+}
+
+#top1, #top2, #top3{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+#top1 img, #top2 img, #top3 img {
+    margin-left: 30px;
+    margin-right: 50px;
+
+}
+
+.date1, .date2, .date3{
+    display:flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.date1 p, .date2 p, .date3 p {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.droite {
+    height: 950px;
+    background-color: #004AAD;
+    width: 35%;
+    border-radius: 70px;
+    color: #fff;
+    text-align: center;
+}
+
+.droite h1 {
+    font-size: 60px;
+}
+
+.droite input {  /* Pour la barre de recherche */
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    padding: 5px;
+    border-radius: 10px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid;
+    color: #fff;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    margin: 50px 20px;
+  }
+  
+  hr::after {
+    background: #004AAD;
+    content: 'CATÉGORIES';
+    font-size: 40px;
+    padding: 0 20px;
+    position: relative;
+    top: -25px;
+  }
+
+
+
+
+
+
+
+.don {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.don p {
+    font-size: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+.don button {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    background-color: #FFBD59; 
+    color: #000; 
+    border: none; 
+    padding: 10px 50px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 30px; 
+    margin-top: 20px;
+}
+
+
+/* footer */
+
+footer {
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 270px;
+    background-color: #FFBD59;
+    margin-top: 100px;
+}
+
+footer h2 {
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+footer input {
+    height: 30px;
+    width: 300px;
+    border: solid 1px #fff;
+    border-radius: 5px;
+}
+
+footer button {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #004AAD;
+    color: #fff;
+    text-align: center;
+    margin:0;
+    margin-top: 20px;
+    padding:0;
+}
+
+.new {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.f2 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f2 h2 {
+    margin-bottom: 25px;
+}
+
+.f1 p {
+    position: relative;
+    bottom: -50px;
+    margin-left: -60px;
+    margin-bottom: 20px;
+}
+
+.f1 {
+    margin-left: 20px;
+}
+
+.f3 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img{
+    height: 120px;
+    transition: 0.4s;
+    margin-top: 40px;
+    margin-left: -10px;
+}
+
+.reseaux {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50px;
+}
+
+.reseaux svg {
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.re svg {
+    margin-left:20px;
+    margin-right:20px;
+}
