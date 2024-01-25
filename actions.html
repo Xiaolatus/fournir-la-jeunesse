@@ -22,8 +22,30 @@
         </form>
         <button type="submit">Dons</button>
     </nav>
+    
 </header>
 <body>
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navi").style.justifyContent = "flex-end";
+            document.getElementById("logo").style.display = "none";
+            document.getElementById("navi").style.height = "auto";
+            document.getElementById("navi").style.padding = "1%";
+
+          } else {
+            document.getElementById("navi").style.justifyContent = "center";
+            document.getElementById("logo").style.display = "block";
+            document.getElementById("navi").style.height = "150px";
+            document.getElementById("navi").style.padding = "0";
+
+
+          }
+        }
+        </script>
     <div id="banniere">
         <img src="img/ban.jpg" alt="banniere">
         <div id="texte">

@@ -32,7 +32,7 @@ header{
     width:70%;
     margin-right: 2%;
     margin-left: 20px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 #navi li{
@@ -49,16 +49,17 @@ header{
 #navi{
     top: 0;
     display: flex;
-    justify-content:center; 
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 150px;
     align-items: center;
     overflow: hidden;
     background-color: white;
+    height: 150px;
     transition: 0.4s;
     position: fixed;
     z-index: 99;
-}
+  }
 
 #navi input {  /* Pour la barre de recherche */
     margin-left: 20px;
@@ -67,7 +68,7 @@ header{
     border: 1px solid #000000;
     padding: 5px;
     width: 400px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 
@@ -105,7 +106,7 @@ header img{
     border-radius: 20px; 
     margin-left: 100px;
     margin-right: 50px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 /* fin du hearder */
@@ -113,15 +114,23 @@ header img{
 #banniere {
     position: relative;
     width: 100%;
-    height: 400px;
-    margin-top: 150px;
+    height: auto; /* Permet à la hauteur d'ajuster en fonction du contenu */
 }
 
 #banniere img {
+    display: block;
     width: 100%;
     height: auto;
-    object-fit: cover;
-    object-position: 100% 0;
+}
+
+#texte {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    color: white; /* Couleur du texte */
+    font-size:24px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
 }
 
 #navi button:hover {
@@ -132,26 +141,15 @@ header img{
     background-color: #F89500;
 }
 
-#banniere #texte {
-    position: absolute;
-    top: 550px;
-    right: -300px;
-    transform: translate(-50%, -50%);
-    color: #fff; 
-    font-size: 24px; 
-    background-color: rgba(0, 0, 0, 0.8); /* Ajoute un fond noir avec 50% d'opacité */
-    padding: 20px;
-}
 
 #actions {
     position: relative;
-    top: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
     height: 1000px;
-    margin-top: 150px;
+    margin-top: 20px;
 }
 
 .action {
