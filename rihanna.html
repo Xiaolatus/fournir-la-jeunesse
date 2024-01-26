@@ -9,8 +9,7 @@
 </head>
 <header>
     <nav id="navi">
-        <img src="img/logo.png" alt="logo">
-        <ul>
+        <a href="accueil.html"><img src="img/logo.png" alt="logo" id="logo"></a>        <ul>
             <li><a href="accueil.html">Accueil</a></li>
             <li><a href="actualites.html"style="color: #fff; padding: 5px; background-color: #AD2C2C; border: solid 1px #AD2C2C; border-radius: 20px; font-weight: bolder;">Actualités</a></li>
             <li><a href="actions.html">Actions</a></li>
@@ -22,6 +21,25 @@
         </form>
         <button type="submit">Dons</button>
     </nav>
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("logo").style.display = "none";
+            document.getElementById("navi").style.height = "auto";
+            document.getElementById("navi").style.padding = "1%";
+
+          } else {
+            document.getElementById("logo").style.display = "block";
+            document.getElementById("navi").style.height = "150px";
+            document.getElementById("navi").style.padding = "0";
+
+
+          }
+        }
+        </script>
 </header>
 <body>
     <div id="banniere">
@@ -168,7 +186,6 @@
             <input type="text" id="mail" name="mail" placeholder="E-mail" required>
             <button type="submit">Valider</button>
         </div>
-        <p>Mentions légales&emsp;&emsp;&emsp;&emsp;Politique de confidentialité</p>
-</div>
+        <p><a href="mentions.html" target="_blank">Mentions légales</a>&emsp;&emsp;&emsp;&emsp;Politique de confidentialité</p></div>
 </footer>
 </html>
