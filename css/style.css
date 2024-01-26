@@ -36,8 +36,9 @@ header{
   /* margin-top: 40px; */
 }
 
+
 #navbar li{
-  margin-left: 5%;
+  margin-left: 2%;
 }
 
 #navbar a{
@@ -70,6 +71,7 @@ header{
   padding: 5px;
   width: 400px;
   /* margin-top: 20px; */
+  display:block;
 }
 
 
@@ -82,6 +84,14 @@ header img{
   
 }
 
+#navbar li {
+  min-width:82px;
+  max-width:83px;
+  text-align: center;
+
+}
+
+
 #navbar li a:hover{
   color: #fff;
   padding:5px;
@@ -89,7 +99,7 @@ header img{
   border: solid 1px #AD2C2C;
   border-radius: 20px;
   font-weight: bolder;
-}
+} 
 
 #navbar button {
   display:flex;
@@ -504,4 +514,12 @@ video{
   padding-right: 39%;
   font-size: 19px;
   margin-top: 5%;
+}
+
+@media screen and (max-width:1346px){
+  #navbar input{
+    display: none;
+  }
+ 
+
 }
