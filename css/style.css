@@ -301,7 +301,27 @@ header img{
   margin-top: 20px;
 }
 
+.rond {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.actions {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .rond {
+      flex-direction: column;
+      justify-content: space-around;
+  }
+
+  .actions {
+      width: 30%;
+  }
+}
 
 
 
