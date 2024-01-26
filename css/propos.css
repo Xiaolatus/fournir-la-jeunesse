@@ -49,8 +49,9 @@ body{
     /* margin-top: 40px; */
   }
   
+
   #navbar li{
-    margin-left: 5%;
+    margin-left: 2%;
   }
   
   #navbar a{
@@ -83,6 +84,7 @@ body{
     padding: 5px;
     width: 400px;
     /* margin-top: 20px; */
+    display:block;
   }
   
   
@@ -94,7 +96,15 @@ body{
     margin-bottom: 20px;
     
   }
-  
+
+  #navbar li {
+    min-width:82px;
+    max-width:83px;
+    text-align: center;
+
+  }
+
+
   #navbar li a:hover{
     color: #fff;
     padding:5px;
@@ -102,7 +112,7 @@ body{
     border: solid 1px #AD2C2C;
     border-radius: 20px;
     font-weight: bolder;
-  }
+  } 
   
   #navbar button {
     display:flex;
@@ -437,3 +447,10 @@ body{
 
 
 
+@media screen and (max-width:1346px){
+  #navbar input{
+    display: none;
+  }
+ 
+
+}
